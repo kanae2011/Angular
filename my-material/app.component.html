@@ -1,0 +1,22 @@
+<div class ="example-button-container">
+  <button mat-fab color="warn" aria-label="Example button with a home icon">
+      <mat-icon>home</mat-icon>
+  </button>
+</div>
+
+<h3>My Budget: ₩{{budget}}</h3>
+<input type="text" [(ngModel)]="budget">
+<button (click)="onAddIncome()">Add Income</button>
+
+<div class="mat-app-background">
+  <h3>My Budget: &#8361;{{budget}}</h3>
+  <mat-form-field>
+      <input matInput 
+             placeholder="budget" 
+             type="text" 
+             [(ngModel)]="budget"/>
+  </mat-form-field>
+  <button mat-raised-button 
+          color="primary" 
+          (click)="onAddIncome()">Add Income</button>
+</div>
